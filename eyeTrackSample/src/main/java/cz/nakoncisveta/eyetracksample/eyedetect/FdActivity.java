@@ -91,7 +91,7 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
     double xCenter = -1;
     double yCenter = -1;
     double xPrevious = 0.0;
-    double TURNBUFFER = 20.0;
+    double TURNBUFFER = 45.0;
     int turnCounter = 0;
     long lastTurnTime = System.currentTimeMillis();
 
@@ -307,59 +307,59 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
         Rect[] facesArray = faces.toArray();
         Double xChange = 0.0;
         for (int i = 0; i < facesArray.length; i++)
-        {	Imgproc.rectangle(mRgba, facesArray[i].tl(), facesArray[i].br(),
-                FACE_RECT_COLOR, 3);
+        {	//Imgproc.rectangle(mRgba, facesArray[i].tl(), facesArray[i].br(),
+            //    FACE_RECT_COLOR, 3);
             xCenter = (facesArray[i].x + facesArray[i].width + facesArray[i].x) / 2;
             yCenter = (facesArray[i].y + facesArray[i].y + facesArray[i].height) / 2;
             Point center = new Point(xCenter, yCenter);
             //Turn Signals but for humans
             getTurnSignal(xCenter);
 
-            Imgproc.circle(mRgba, center, 10, new Scalar(255, 0, 0, 255), 3);
+            //Imgproc.circle(mRgba, center, 10, new Scalar(255, 0, 0, 255), 3);
 
-            Imgproc.putText(mRgba, "[" + center.x + "," + center.y + "]",
-                    new Point(center.x + 20, center.y + 20),
-                    Core.FONT_HERSHEY_SIMPLEX, 0.7, new Scalar(255, 255, 255,
-                            255));
+//            Imgproc.putText(mRgba, "[" + center.x + "," + center.y + "]",
+//                    new Point(center.x + 20, center.y + 20),
+//                    Core.FONT_HERSHEY_SIMPLEX, 0.7, new Scalar(255, 255, 255,
+//                            255));
 
             Rect r = facesArray[i];
             // compute the eye area
-            Rect eyearea = new Rect(r.x + r.width / 8,
-                    (int) (r.y + (r.height / 4.5)), r.width - 2 * r.width / 8,
-                    (int) (r.height / 3.0));
-            // split it
-            Rect eyearea_right = new Rect(r.x + r.width / 16,
-                    (int) (r.y + (r.height / 4.5)),
-                    (r.width - 2 * r.width / 16) / 2, (int) (r.height / 3.0));
-            Rect eyearea_left = new Rect(r.x + r.width / 16
-                    + (r.width - 2 * r.width / 16) / 2,
-                    (int) (r.y + (r.height / 4.5)),
-                    (r.width - 2 * r.width / 16) / 2, (int) (r.height / 3.0));
-            // draw the area - mGray is working grayscale mat, if you want to
+//            Rect eyearea = new Rect(r.x + r.width / 8,
+//                    (int) (r.y + (r.height / 4.5)), r.width - 2 * r.width / 8,
+//                    (int) (r.height / 3.0));
+//            // split it
+//            Rect eyearea_right = new Rect(r.x + r.width / 16,
+//                    (int) (r.y + (r.height / 4.5)),
+//                    (r.width - 2 * r.width / 16) / 2, (int) (r.height / 3.0));
+//            Rect eyearea_left = new Rect(r.x + r.width / 16
+//                    + (r.width - 2 * r.width / 16) / 2,
+//                    (int) (r.y + (r.height / 4.5)),
+//                    (r.width - 2 * r.width / 16) / 2, (int) (r.height / 3.0));
+//            // draw the area - mGray is working grayscale mat, if you want to
             // see area in rgb preview, change mGray to mRgba
-            Imgproc.rectangle(mRgba, eyearea_left.tl(), eyearea_left.br(),
-                    new Scalar(255, 0, 0, 255), 2);
-            Imgproc.rectangle(mRgba, eyearea_right.tl(), eyearea_right.br(),
-                    new Scalar(255, 0, 0, 255), 2);
+//            Imgproc.rectangle(mRgba, eyearea_left.tl(), eyearea_left.br(),
+//                    new Scalar(255, 0, 0, 255), 2);
+//            Imgproc.rectangle(mRgba, eyearea_right.tl(), eyearea_right.br(),
+//                    new Scalar(255, 0, 0, 255), 2);
 
-            if (learn_frames < 5) {
-                teplateR = get_template(mJavaDetectorEye, eyearea_right, 24);
-                teplateL = get_template(mJavaDetectorEye, eyearea_left, 24);
-                learn_frames++;
-            } else {
-                // Learning finished, use the new templates for template
-                // matching
-                match_eye(eyearea_right, teplateR, method);
-                match_eye(eyearea_left, teplateL, method);
+//            if (learn_frames < 5) {
+//                teplateR = get_template(mJavaDetectorEye, eyearea_right, 24);
+//                teplateL = get_template(mJavaDetectorEye, eyearea_left, 24);
+//                learn_frames++;
+//            } else {
+//                // Learning finished, use the new templates for template
+//                // matching
+//                match_eye(eyearea_right, teplateR, method);
+//                match_eye(eyearea_left, teplateL, method);
+//
+//            }
 
-            }
 
-
-            // cut eye areas and put them to zoom windows
-            Imgproc.resize(mRgba.submat(eyearea_left), mZoomWindow2,
-                    mZoomWindow2.size());
-            Imgproc.resize(mRgba.submat(eyearea_right), mZoomWindow,
-                    mZoomWindow.size());
+//            // cut eye areas and put them to zoom windows
+//            Imgproc.resize(mRgba.submat(eyearea_left), mZoomWindow2,
+//                    mZoomWindow2.size());
+//            Imgproc.resize(mRgba.submat(eyearea_right), mZoomWindow,
+//                    mZoomWindow.size());
 
 
         }
