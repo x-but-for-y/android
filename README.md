@@ -2,7 +2,7 @@
 
 Real-time, turn signals for human safety and accident prevention
 
-[**Read the DevPost for more info!**](link_here)
+[**Read the DevPost for more info!**](https://devpost.com/software/x-but-for-y)
 
 Made in under 24 hours for Uncommon Hacks at the University of Chicago.
 
@@ -10,7 +10,7 @@ Made in under 24 hours for Uncommon Hacks at the University of Chicago.
 
 1. Clone the repo `git clone https://github.com/x-but-for-y/android.git`
 
-[Video demo of turn signals](https://devpost.com/software/x-but-for-y)
+[Video demo of turn signals](link_here)
 
 ## Inspiration
 
