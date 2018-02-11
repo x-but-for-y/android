@@ -10,7 +10,7 @@ Made in under 24 hours for Uncommon Hacks at the University of Chicago.
 
 1. Clone the repo `git clone https://github.com/x-but-for-y/android.git`
 
-[Video demo of turn signals](link_here)
+[Video demo of turn signals](https://devpost.com/software/x-but-for-y)
 
 ## Inspiration
 
@@ -26,5 +26,3 @@ Thinking about turning left? turn-signals but for humans automatically registers
 
  We found a project which used Computer Vision to help us get started
  ![Screenshot](http://romanhosek.cz/wp-content/uploads/2013/01/device-2013-01-20-185851.png)
-
- 
