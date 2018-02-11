@@ -11,38 +11,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d9c52c5-9db4-435e-9d07-7d23e6bd0b0a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental-verifier/debug/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.class" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental-verifier/debug/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental-verifier/debug/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.class" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental-verifier/debug/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/split-apk/debug/slices/slice_3.apk" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/split-apk/debug/slices/slice_3.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexBuilder/debug/13/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.dex" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexBuilder/debug/13/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexBuilder/debug/13/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.dex" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexBuilder/debug/13/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexBuilder/debug/13/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity.dex" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexBuilder/debug/13/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexMerger/debug/3/classes.dex" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/dexMerger/debug/3/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRun/debug/0/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.class" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRun/debug/0/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRun/debug/0/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.class" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRun/debug/0/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.class" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.class" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity.class" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/outputs/apk/debug/eyeTrackSample-debug.apk" afterPath="$PROJECT_DIR$/eyeTrackSample/build/outputs/apk/debug/eyeTrackSample-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/incremental/packageInstantRunResourcesDebug/debug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/buildId.txt" afterPath="$PROJECT_DIR$/eyeTrackSample/build/intermediates/transforms/instantRunSlicer/debug/3/buildId.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eyeTrackSample/src/main/java/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity.java" afterPath="$PROJECT_DIR$/eyeTrackSample/src/main/java/cz/nakoncisveta/eyetracksample/eyedetect/FdActivity.java" />
-    </list>
+    <list default="true" id="9d9c52c5-9db4-435e-9d07-7d23e6bd0b0a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -2984,7 +2953,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518351741116" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518352209377" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3032,7 +3001,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518351741116" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518352209377" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3215,7 +3184,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518351741118" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1518352209378" />
       </method>
     </configuration>
     <list size="1">

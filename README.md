@@ -8,9 +8,15 @@ Made in under 24 hours for Uncommon Hacks at the University of Chicago.
 
 ## Installation
 
-1. Clone the repo `git clone https://github.com/x-but-for-y/android.git`
+1. Clone the Android repo `git clone https://github.com/x-but-for-y/android.git`
 
-2. Clone the server repo
+2. Clone the API [repo](https://github.com/x-but-for-y/turnsignals-api)
+
+3. start the API
+
+4. Open Android Studion, Select "Import project (Gradle, Eclipse ADT, etc.)", find the location you cloned the Android repo and import the file `build.gradle`
+
+5. Plug in device, select Run
 
 [Video demo of turn signals](link_here)
 
@@ -32,4 +38,4 @@ Thinking about turning left? turn-signals but for humans automatically registers
 ## Challenges
 
 We faced MANY challenged building out the Android interface. When we initially approached the app, we attempted to use
-the Android Camera API. After some time of messing around with it we learned this API is deprecated in favor of Android's Camera2 [API](https://developer.android.com/reference/android/hardware/camera2/package-summary.html). Unlike the deprecated Camera API, Camera2 API has very little documentation on how to get started. This forced us to look for existing open-source projects we could model off of. Google has a few examples of the Camera2 API. We tried the basic example and realized it would not fit our project requirements. Simply using the Camera2 API would only give us the ability to analyze images once they were capture. We require active analyzation of the camera preview to identify head turns and gestures. We finally found a decent starter template which used the OpenCVLibrary300 (Computer Vision) to outline eye locations and built the project from this template. The final challenge we had was a good one: our readings were too sensitive/noisy. I reduced the noise with a filter which filtered any change below a minimum threshold to a range sufficient for app functioning. 
+the Android Camera API. After some time of messing around with it we learned this API is deprecated in favor of Android's Camera2 [API](https://developer.android.com/reference/android/hardware/camera2/package-summary.html). Unlike the deprecated Camera API, Camera2 API has very little documentation on how to get started. This forced us to look for existing open-source projects we could model off of. Google has a few examples of the Camera2 API. We tried the basic example and realized it would not fit our project requirements. Simply using the Camera2 API would only give us the ability to analyze images once they were capture. We require active analyzation of the camera preview to identify head turns and gestures. We finally found a decent starter template which used the OpenCVLibrary300 (Computer Vision) to outline eye locations and built the project from this template. The final challenge we had was a good one: our readings were too sensitive/noisy. I reduced the noise with a filter which filtered any change below a minimum threshold to a range sufficient for app functioning.
