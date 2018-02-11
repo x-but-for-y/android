@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/build/intermediates/res/merged/debug/drawable_icon.png.flat",
+        "source": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/src/main/res/drawable/icon.png"
+    },
+    {
+        "merged": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/build/intermediates/res/merged/debug/layout_face_detect_surface_view.xml.flat",
+        "source": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/src/main/res/layout/face_detect_surface_view.xml"
+    },
+    {
+        "merged": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/build/intermediates/res/merged/debug/raw_haarcascade_lefteye_2splits.xml.flat",
+        "source": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/src/main/res/raw/haarcascade_lefteye_2splits.xml"
+    },
+    {
+        "merged": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/build/intermediates/res/merged/debug/raw_lbpcascade_frontalface.xml.flat",
+        "source": "/home/pat/Projects/uncommon-hacks/eye-openCV/eyeTrackSample/eyeTrackSample/src/main/res/raw/lbpcascade_frontalface.xml"
+    }
+]

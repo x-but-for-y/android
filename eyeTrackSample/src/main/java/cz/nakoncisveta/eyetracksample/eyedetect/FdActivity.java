@@ -29,10 +29,17 @@ import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.objdetect.Objdetect;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
 
 
 public class FdActivity extends Activity implements CvCameraViewListener2 {
@@ -83,6 +90,10 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
 
     double xCenter = -1;
     double yCenter = -1;
+    double xPrevious = 0.0;
+    double TURNBUFFER = 20.0;
+    int turnCounter = 0;
+    long lastTurnTime = System.currentTimeMillis();
 
     private BaseLoaderCallback  mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -163,6 +174,12 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        try {
+            getHTML("http://6eaaeb23.ngrok.io/right");
+        } catch (Exception e) {
+            Log.d("Pat", "HTTP Error: " + e);
+        }
+
         Log.i(TAG, "called onCreate");
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -288,12 +305,15 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
         }
 
         Rect[] facesArray = faces.toArray();
+        Double xChange = 0.0;
         for (int i = 0; i < facesArray.length; i++)
         {	Imgproc.rectangle(mRgba, facesArray[i].tl(), facesArray[i].br(),
                 FACE_RECT_COLOR, 3);
             xCenter = (facesArray[i].x + facesArray[i].width + facesArray[i].x) / 2;
             yCenter = (facesArray[i].y + facesArray[i].y + facesArray[i].height) / 2;
             Point center = new Point(xCenter, yCenter);
+            //Turn Signals but for humans
+            getTurnSignal(xCenter);
 
             Imgproc.circle(mRgba, center, 10, new Scalar(255, 0, 0, 255), 3);
 
@@ -343,7 +363,6 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
 
 
         }
-
         return mRgba;
     }
 
@@ -488,6 +507,49 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
     public void onRecreateClick(View v)
     {
         learn_frames = 0;
+    }
+
+    public static String getHTML(String urlToRead) throws Exception {
+        StringBuilder result = new StringBuilder();
+        URL url = new URL(urlToRead);
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("GET");
+        BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+        String line;
+        while ((line = rd.readLine()) != null) {
+            result.append(line);
+        }
+        rd.close();
+        Log.d("PAT", "request sent");
+        return result.toString();
+    }
+
+    public void getTurnSignal(double xCenter) {
+        double xChange = xCenter - xPrevious;
+        long currentTime = System.currentTimeMillis();
+        if (currentTime - lastTurnTime >= 3000) {
+            Log.d("Change", Double.toString(xChange));
+            if (xChange > TURNBUFFER) {
+                Log.d("Pat", "Direction " + turnCounter +": Left");
+                try {
+                    getHTML("http://6eaaeb23.ngrok.io/left");
+                } catch (Exception e) {
+                    Log.d("Pat", "HTTP Error: " + e);
+                }
+                lastTurnTime = System.currentTimeMillis();
+                turnCounter++;
+            } else if (xChange < -TURNBUFFER) {
+                Log.d("Pat", "Direction " + turnCounter +": Right");
+                try {
+                    getHTML("http://6eaaeb23.ngrok.io/right");
+                } catch (Exception e) {
+                    Log.d("Pat", "HTTP Error: " + e);
+                }
+                lastTurnTime = System.currentTimeMillis();
+                turnCounter++;
+            }
+        }
+        xPrevious = xCenter;
     }
 
 }
